@@ -20,9 +20,9 @@ def playgame():
         elif (user == 0 and computer == 2) or \
              (user == 1 and computer == 0) or \
              (user == 2 and computer == 1):
-            print("你贏了！🎉")
+            print("你贏了！")
         else:
-            print("你輸了！😢")
+            print("你輸了！")
 
     except ValueError:
         print("請輸入數字 0、1 或 2！")

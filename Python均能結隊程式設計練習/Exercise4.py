@@ -7,8 +7,8 @@ def my_find(sub, full):
             return i 
     return -1 
 
-s1 = input("請輸入第一個字串：")
-s2 = input("請輸入第二個字串：")
+s1 = input("請輸入第一個字串（目標字串的子字串）：")
+s2 = input("請輸入第二個字串（目標字串）：")
 
 # 執行程式
 pos = my_find(s1, s2)
