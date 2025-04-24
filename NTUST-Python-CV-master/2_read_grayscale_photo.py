@@ -4,7 +4,7 @@ import cv2
 # 建立顯示影像所需要的視窗 名稱為：FirstExample
 cv2.namedWindow("FirstExample", cv2.WINDOW_AUTOSIZE)
 # 從路徑 ./images/ntust.png 讀取圖片並以灰階儲存成 photo 變數
-photo = cv2.imread("./images/ntust.png", cv2.IMREAD_GRAYSCALE)
+photo = cv2.imread("C:/Python/NTUST-Python-CV-master/images/ntust.png", cv2.IMREAD_GRAYSCALE)
 
 # cv2.IMREAD_COLOR # RGB 讀取
 # cv2.IMREAD_GRAYSCALE # 灰階讀取

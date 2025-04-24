@@ -3,7 +3,7 @@ from google import genai
 
 def chat_gemini(user_prompt):
     """透過 Gemini 進行溝通"""
-    client = genai.Client(api_key="YOUR API KEY")
+    client = genai.Client(api_key="AIzaSyB7OEB5hxLZX34G_6ini3G23tZ44mLyQl0")
     system_prompt = ""
     res = client.models.generate_content(
         model="gemini-2.0-flash",

@@ -6,7 +6,7 @@ import re
 
 def gemini_vision(image_data):
     """透過 Gemini 進行辨識"""
-    client = genai.Client(api_key="YOUR API KEY")
+    client = genai.Client(api_key="AIzaSyB7OEB5hxLZX34G_6ini3G23tZ44mLyQl0")
     system_prompt = "辨識這張車牌的號碼‵，接下來我會傳送車牌的圖片，請只回傳車牌辨識內容"
     response = client.models.generate_content(
         model="gemini-2.0-flash",
@@ -41,7 +41,7 @@ def get_license(img):
 
 
 try:
-    img = cv2.imread('car.jpg')  # 讀取圖片
+    img = cv2.imread('C:/Python/NTUST-Python-CV-master/images/car.jpg')  # 讀取圖片
     print('status:  Start')
     text = get_license(img)  # 辨識圖片中的車牌
     print('車牌：', text)

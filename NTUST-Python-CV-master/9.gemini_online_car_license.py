@@ -6,7 +6,7 @@ import re
 
 def gemini_vision(image_data):
     """透過 Gemini 進行辨識"""
-    client = genai.Client(api_key="YOUR API KEY")
+    client = genai.Client(api_key="AIzaSyB7OEB5hxLZX34G_6ini3G23tZ44mLyQl0")
     system_prompt = "辨識這張車牌的號碼‵，接下來我會傳送車牌的圖片，請只回傳車牌辨識內容"
     response = client.models.generate_content(
         model="gemini-2.0-flash",
@@ -49,7 +49,7 @@ if capture.isOpened():
         k = cv2.waitKey(100)
         if k == ord('s') or k == ord('S'):
             print("開始辨識")
-            cv2.imwrite('shot.jpg', img)
+            cv2.imwrite('C:/Python/NTUST-Python-CV-master/output/shot.jpg', img)
             text = get_license(img)
             print("車牌:", text)
         if k == ord('q') or k == ord('Q'):

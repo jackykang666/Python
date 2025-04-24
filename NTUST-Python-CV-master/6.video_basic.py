@@ -1,13 +1,13 @@
 import cv2
 
 # 建立攝影機物件 裡面的數字是指攝影機編號(預設 0)
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture("http://140.118.137.68:8080/video")
 # 確認攝影機是否已經打開
 print(f"Camera is Open:{camera.isOpened()}")
 # 讀取攝影機影像
-# success, img = camera.read()
-# cv2.imshow("FirstVideo",img)
-# cv2.imwrite("./output/first-video.png",img)
+#success, img = camera.read()
+#cv2.imshow("FirstVideo",img)
+#cv2.imwrite("C:/Python/NTUST-Python-CV-master/output/first-video.png",img)
 
 # 持續輸出影像
 while True:
@@ -24,7 +24,7 @@ while True:
         break
     # 當按下 s 儲存畫面
     if key == ord("s"):
-        cv2.imwrite("./output/snapshot.png",img)
+        cv2.imwrite("C:/Python/NTUST-Python-CV-master/output/snapshot.png",img)
         print("ScreenShot")
 
 
